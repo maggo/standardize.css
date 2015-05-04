@@ -1,14 +1,17 @@
 /*! standardize.css v0.0.1 */
 
 /**
- * border-box is the de facto standard now
- * 1. Android 2.3 needs the webkit prefix
+ * border-box is the de facto standard now. Add it to the html tag and let elements inherit
  */
+ 
+html {
+  box-sizing: border-box;
+}
+
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box; /* 1 */
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 /**
