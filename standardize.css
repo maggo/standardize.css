@@ -1,0 +1,45 @@
+/*! standardize.css v0.0.1 */
+
+/**
+ * border-box is the de facto standard now
+ * 1. Android 2.3 needs the webkit prefix
+ */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box; /* 1 */
+  box-sizing: border-box;
+}
+
+/**
+ * 1. Remove top margin from all elements that get margins from the browser stylesheet
+ * 2. Introduce a consistent bottom margin
+ */
+
+ul,
+ol,
+dl,
+menu,
+p,
+blockquote,
+figure,
+hr,
+pre
+{
+  margin-top: 0; /* 1 */
+  margin-bottom: 1em; /* 2 */
+}
+
+/**
+ * Remove top margin from headings
+ */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  margin-top: 0;
+}
